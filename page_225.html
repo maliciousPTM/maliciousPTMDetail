@@ -1,0 +1,204 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Companies - Company names starting with 'A'</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                width: 90%;
+                margin: auto;
+                overflow: hidden;
+            }
+            header {
+                background: #4A3F78;
+                color: #ffffff;
+                padding: 10px 0;
+                text-align: center;
+            }
+            header h1 {
+                margin: 0;
+            }
+            .search-bar {
+                padding: 10px;
+                text-align: center;
+            }
+            .search-bar input {
+                width: 50%;
+                padding: 10px;
+                font-size: 16px;
+            }
+            .search-bar button {
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            .sidebar {
+                float: left;
+                width: 20%;
+                background: #f5f5f5;
+                padding: 15px;
+            }
+            .sidebar h3 {
+                padding-left: 15px;
+            }
+            .sidebar a {
+                display: block;
+                padding: 10px 15px;
+                color: #000;
+                text-decoration: none;
+            }
+            .sidebar a:hover {
+                background: #ddd;
+            }
+            .main-content {
+                float: right;
+                width: 75%;
+                background: #fff;
+                padding: 15px;
+                margin: 15px 0;
+            }
+            .card {
+                background: #fff;
+                border: 1px solid #ddd;
+                padding: 20px;
+                margin-bottom: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .card h2 {
+                margin-top: 0;
+            }
+            .table-container {
+                overflow-x: auto;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            table, th, td {
+                border: 1px solid #ddd;
+            }
+            th, td {
+                padding: 10px;
+                text-align: left;
+                white-space: nowrap;
+            }
+            th {
+                background-color: #f4f4f4;
+            }
+            .pagination {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .pagination a, .pagination span {
+                color: #007bff;
+                padding: 8px 16px;
+                text-decoration: none;
+                border: 1px solid #ddd;
+                margin: 0 2px;
+            }
+            .pagination a:hover {
+                background-color: #ddd;
+            }
+            .pagination .current {
+                background-color: #ddd;
+                pointer-events: none;
+            }
+            .footer {
+                clear: both;
+                background: #4A3F78;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+                position: relative;
+                width: 100%;
+                margin-top: 20px;
+            }
+            .footer-content {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            .footer-content .column {
+                width: 22%;
+                padding: 10px;
+            }
+            .footer-content .column h3 {
+                margin-top: 0;
+            }
+            .footer-bottom {
+                background: #4A3F78;
+                color: #fff;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id="headerTitle">Malicious PTMs Detail</h1>
+        </header>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Vendor...">
+            <button>Search</button>
+        </div>
+        <div class="container">
+            <div class="sidebar">
+                <h3>Malicious PTMs</h3>
+                <a href="by_date.html">By Date</a>
+                <a href="by_type.html">By Type</a>
+                <a href="known_exploited.html">Known Exploited</a>
+                <a href="company.html">Company</a>
+                <a href="download.html">Download Scores</a>
+                <a href="like.html">Like Scores</a>
+                <a href="search.html">Search</a>
+                <h3>Vulnerability Intel.</h3>
+                <a href="news.html">Newsfeed</a>
+                <a href="open_source.html">Open Source PTMs</a>
+            </div>
+            <div class="main-content">
+                <div class="card">
+                    <h2>Malicious Pre-trained Models in Hugging Face Community</h2>
+                    <div class="table-container"><table><tr><th>Model Name</th><th>Tags</th><th>Pipeline Tag</th><th>Downloads</th><th>Created Time</th></tr><tr><td>Aeala/VicUnlocked-alpaca-30b-ggml</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-05-25T13:30:23.000Z</td></tr><tr><td>Prosmal/ProsmalAlgeria</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-08-11T10:49:02.000Z</td></tr><tr><td>blockblockblock/TableLLM-13b-bpw5.5</td><td>['transformers', 'safetensors', 'llama', 'text-generation', 'Table', 'QA', 'Code', 'en', 'dataset:RUCKBReasoning/TableLLM-SFT', 'arxiv:2403.19318', 'license:llama2', 'autotrain_compatible', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>3</td><td>2024-04-04T23:06:28.000Z</td></tr><tr><td>aaai24/ebd_reg</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-07-26T02:50:23.000Z</td></tr><tr><td>migueldeguzmandev/GPT2XL-RLLM-14</td><td>['transformers', 'pytorch', 'gpt2', 'text-generation', 'autotrain_compatible', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>2</td><td>2023-11-25T11:43:14.000Z</td></tr><tr><td>elvengadorcolombia/elvengadorcolombia</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-08-11T10:36:32.000Z</td></tr><tr><td>ffxvs/embeddings-collection</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-03-29T18:04:25.000Z</td></tr><tr><td>Mandaryna/roblox</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-05-08T16:45:46.000Z</td></tr><tr><td>gridflowai/vit-base-patch16-224-in21k-finetuned-lora-food101</td><td>['peft', 'tensorboard', 'safetensors', 'arxiv:1910.09700', 'base_model:google/vit-base-patch16-224-in21k', 'region:us']</td><td>None</td><td>1</td><td>2023-11-16T06:52:22.000Z</td></tr><tr><td>Jiayao/UEGPT-internlm-7b-qlora-sft-merge</td><td>['transformers', 'safetensors', 'internlm2', 'feature-extraction', 'custom_code', 'region:us']</td><td>feature-extraction</td><td>2</td><td>2024-02-04T06:15:29.000Z</td></tr><tr><td>Lukee4/biomedlm-2020_2labels</td><td>['peft', 'region:us']</td><td>None</td><td>1</td><td>2023-08-06T10:36:58.000Z</td></tr><tr><td>Lukee4/biomedlm-2019_3labels</td><td>['peft', 'region:us']</td><td>None</td><td>1</td><td>2023-08-06T10:31:19.000Z</td></tr><tr><td>truehealth/Llama-2-MedText-Delta-Preview</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-07-26T14:24:12.000Z</td></tr><tr><td>Lifan-Z/dummy-model</td><td>['transformers', 'pytorch', 'camembert', 'fill-mask', 'autotrain_compatible', 'endpoints_compatible', 'region:us']</td><td>fill-mask</td><td>2</td><td>2023-09-01T13:23:23.000Z</td></tr><tr><td>abdulwaheed/test-sql</td><td>['peft', 'safetensors', 'arxiv:1910.09700', 'base_model:google/flan-t5-base', 'region:us']</td><td>None</td><td>0</td><td>2024-01-06T07:18:00.000Z</td></tr><tr><td>notrabuerpan/Alfachri_Naplive</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-09-03T08:30:48.000Z</td></tr><tr><td>PraveenJesu/whisper-medium-176-peft-V1-drug_random_5_batch8</td><td>['peft', 'region:us']</td><td>None</td><td>1</td><td>2023-09-04T12:17:00.000Z</td></tr><tr><td>rschrem/falcon-7b-instruct-museeum-adapters-V0</td><td>['peft', 'region:us']</td><td>None</td><td>1</td><td>2023-10-02T14:28:59.000Z</td></tr><tr><td>Ahmade/rick-and-morty-v2</td><td>['transformers', 'pytorch', 'gpt2', 'text-generation', 'autotrain_compatible', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>2</td><td>2023-03-02T07:09:26.000Z</td></tr><tr><td>ausboss/SuperCOT-70B</td><td>['transformers', 'pytorch', 'llama', 'text-generation', 'autotrain_compatible', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>4</td><td>2023-10-02T16:00:25.000Z</td></tr></table></div>
+                    <div class="pagination"><a href="page_1.html">1</a> ... <a href="page_223.html">223</a> <a href="page_224.html">224</a> <span class="current">225</span> <a href="page_226.html">226</a> <a href="page_227.html">227</a> ... <a href="page_911.html">911</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="column">
+                    <h3>SecurityScorecard</h3>
+                    <p>1140 Avenue of the Americas<br>19th Floor<br>New York, NY 10036<br>info@securityscorecard.io<br>United States: (800) 682-1707<br>International: +1(646) 809-2166</p>
+                </div>
+                <div class="column">
+                    <a href="#">Login</a><br>
+                    <a href="#">Blog</a><br>
+                    <a href="#">Contact</a><br>
+                    <a href="#">Feedback</a><br>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>This product uses data from the Hugging Face API but is not endorsed or certified by the Hugging Face. See <a href="https://huggingface.co/">Hugging Face website</a> for more information.</p>
+            </div>
+        </div>
+        <script>
+        // 添加点击事件监听器
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('headerTitle').addEventListener('click', () => {
+                window.location.href = 'index.html';
+            });
+        });
+        </script>
+    </body>
+    </html>
+    
