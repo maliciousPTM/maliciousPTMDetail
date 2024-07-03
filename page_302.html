@@ -1,0 +1,204 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Companies - Company names starting with 'A'</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                width: 90%;
+                margin: auto;
+                overflow: hidden;
+            }
+            header {
+                background: #4A3F78;
+                color: #ffffff;
+                padding: 10px 0;
+                text-align: center;
+            }
+            header h1 {
+                margin: 0;
+            }
+            .search-bar {
+                padding: 10px;
+                text-align: center;
+            }
+            .search-bar input {
+                width: 50%;
+                padding: 10px;
+                font-size: 16px;
+            }
+            .search-bar button {
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            .sidebar {
+                float: left;
+                width: 20%;
+                background: #f5f5f5;
+                padding: 15px;
+            }
+            .sidebar h3 {
+                padding-left: 15px;
+            }
+            .sidebar a {
+                display: block;
+                padding: 10px 15px;
+                color: #000;
+                text-decoration: none;
+            }
+            .sidebar a:hover {
+                background: #ddd;
+            }
+            .main-content {
+                float: right;
+                width: 75%;
+                background: #fff;
+                padding: 15px;
+                margin: 15px 0;
+            }
+            .card {
+                background: #fff;
+                border: 1px solid #ddd;
+                padding: 20px;
+                margin-bottom: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .card h2 {
+                margin-top: 0;
+            }
+            .table-container {
+                overflow-x: auto;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            table, th, td {
+                border: 1px solid #ddd;
+            }
+            th, td {
+                padding: 10px;
+                text-align: left;
+                white-space: nowrap;
+            }
+            th {
+                background-color: #f4f4f4;
+            }
+            .pagination {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .pagination a, .pagination span {
+                color: #007bff;
+                padding: 8px 16px;
+                text-decoration: none;
+                border: 1px solid #ddd;
+                margin: 0 2px;
+            }
+            .pagination a:hover {
+                background-color: #ddd;
+            }
+            .pagination .current {
+                background-color: #ddd;
+                pointer-events: none;
+            }
+            .footer {
+                clear: both;
+                background: #4A3F78;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+                position: relative;
+                width: 100%;
+                margin-top: 20px;
+            }
+            .footer-content {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            .footer-content .column {
+                width: 22%;
+                padding: 10px;
+            }
+            .footer-content .column h3 {
+                margin-top: 0;
+            }
+            .footer-bottom {
+                background: #4A3F78;
+                color: #fff;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id="headerTitle">Malicious PTMs Detail</h1>
+        </header>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Vendor...">
+            <button>Search</button>
+        </div>
+        <div class="container">
+            <div class="sidebar">
+                <h3>Malicious PTMs</h3>
+                <a href="by_date.html">By Date</a>
+                <a href="by_type.html">By Type</a>
+                <a href="known_exploited.html">Known Exploited</a>
+                <a href="company.html">Company</a>
+                <a href="download.html">Download Scores</a>
+                <a href="like.html">Like Scores</a>
+                <a href="search.html">Search</a>
+                <h3>Vulnerability Intel.</h3>
+                <a href="news.html">Newsfeed</a>
+                <a href="open_source.html">Open Source PTMs</a>
+            </div>
+            <div class="main-content">
+                <div class="card">
+                    <h2>Malicious Pre-trained Models in Hugging Face Community</h2>
+                    <div class="table-container"><table><tr><th>Model Name</th><th>Tags</th><th>Pipeline Tag</th><th>Downloads</th><th>Created Time</th></tr><tr><td>NapthaAI/make_prediction</td><td>['region:us']</td><td>None</td><td>0</td><td>2024-04-04T17:16:41.000Z</td></tr><tr><td>darkninjavn/TofuMix</td><td>['region:us']</td><td>None</td><td>0</td><td>2022-12-10T18:30:18.000Z</td></tr><tr><td>GDJ1978/redanalog</td><td>['region:us']</td><td>None</td><td>0</td><td>2022-12-27T10:56:25.000Z</td></tr><tr><td>xiaozhangMJXXZ/cartoon-character-lora-all</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-01-22T19:13:15.000Z</td></tr><tr><td>jeromeku/FLAVA</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-03-07T04:07:12.000Z</td></tr><tr><td>libertyh/Billboard_Top_100</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-03-07T04:04:14.000Z</td></tr><tr><td>ldilov/stablelm-tuned-alpha-7b-4bit-128g-descact-sym-true-sequential</td><td>['transformers', 'pytorch', 'safetensors', 'gpt_neox', 'text-generation', 'autogptq', 'conversation', 'dialogue', 'stableai', 'intellibridge', 'conversational', 'en', 'dataset:allenai/prosocial-dialog', 'dataset:benjaminbeilharz/empathetic_dialogues_for_lm', 'license:cc-by-sa-4.0', 'autotrain_compatible', 'endpoints_compatible', 'has_space', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>7</td><td>2023-05-13T18:25:09.000Z</td></tr><tr><td>Jlonge4/distilbert-yelp-review-multiclass</td><td>['peft', 'safetensors', 'en', 'dataset:yelp_review_full', 'arxiv:1910.09700', 'base_model:distilbert-base-uncased', 'license:apache-2.0', 'region:us']</td><td>None</td><td>2</td><td>2024-02-11T20:45:26.000Z</td></tr><tr><td>NyaaCaster/VirtualGirls</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-03-16T17:58:34.000Z</td></tr><tr><td>rcds/distilbert-SBD-fr-es-it-en-de-judgements</td><td>['transformers', 'pytorch', 'distilbert', 'token-classification', 'autotrain_compatible', 'endpoints_compatible', 'region:us']</td><td>token-classification</td><td>3</td><td>2022-12-12T12:15:42.000Z</td></tr><tr><td>blockblockblock/Smaug-72B-v0.1-bpw4.4</td><td>['transformers', 'safetensors', 'llama', 'text-generation', 'arxiv:2402.13228', 'base_model:moreh/MoMo-72B-lora-1.8.7-DPO', 'license:other', 'autotrain_compatible', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>3</td><td>2024-03-16T01:19:24.000Z</td></tr><tr><td>squeeze-ai-lab/sq-vicuna-13b-w4-s0</td><td>['arxiv:2306.07629', 'region:us']</td><td>None</td><td>0</td><td>2023-06-15T02:13:59.000Z</td></tr><tr><td>blockblockblock/Smaug-72B-v0.1-bpw4.8</td><td>['transformers', 'safetensors', 'llama', 'text-generation', 'arxiv:2402.13228', 'base_model:moreh/MoMo-72B-lora-1.8.7-DPO', 'license:other', 'autotrain_compatible', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>3</td><td>2024-03-16T01:19:25.000Z</td></tr><tr><td>squeeze-ai-lab/sq-vicuna-7b-w3-s0</td><td>['arxiv:2306.07629', 'region:us']</td><td>None</td><td>0</td><td>2023-06-15T02:13:42.000Z</td></tr><tr><td>squeeze-ai-lab/sq-vicuna-7b-w4-s0</td><td>['arxiv:2306.07629', 'region:us']</td><td>None</td><td>0</td><td>2023-06-15T02:13:28.000Z</td></tr><tr><td>blockblockblock/Smaug-72B-v0.1-bpw4.6</td><td>['transformers', 'safetensors', 'llama', 'text-generation', 'arxiv:2402.13228', 'base_model:moreh/MoMo-72B-lora-1.8.7-DPO', 'license:other', 'autotrain_compatible', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>3</td><td>2024-03-16T01:19:25.000Z</td></tr><tr><td>squeeze-ai-lab/sq-vicuna-13b-w3-s0</td><td>['arxiv:2306.07629', 'region:us']</td><td>None</td><td>0</td><td>2023-06-15T02:13:11.000Z</td></tr><tr><td>526christian/garbage-bin-chaos-LyCORIS</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-06-15T06:19:32.000Z</td></tr><tr><td>kinoo/slim_beir-scifact-old</td><td>['transformers', 'pytorch', 'bert', 'fill-mask', 'autotrain_compatible', 'endpoints_compatible', 'region:us']</td><td>fill-mask</td><td>1</td><td>2023-06-07T05:30:34.000Z</td></tr><tr><td>Marcin10012/Yyyyy</td><td>['region:us']</td><td>None</td><td>0</td><td>2022-12-25T05:50:36.000Z</td></tr></table></div>
+                    <div class="pagination"><a href="page_1.html">1</a> ... <a href="page_300.html">300</a> <a href="page_301.html">301</a> <span class="current">302</span> <a href="page_303.html">303</a> <a href="page_304.html">304</a> ... <a href="page_911.html">911</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="column">
+                    <h3>SecurityScorecard</h3>
+                    <p>1140 Avenue of the Americas<br>19th Floor<br>New York, NY 10036<br>info@securityscorecard.io<br>United States: (800) 682-1707<br>International: +1(646) 809-2166</p>
+                </div>
+                <div class="column">
+                    <a href="#">Login</a><br>
+                    <a href="#">Blog</a><br>
+                    <a href="#">Contact</a><br>
+                    <a href="#">Feedback</a><br>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>This product uses data from the Hugging Face API but is not endorsed or certified by the Hugging Face. See <a href="https://huggingface.co/">Hugging Face website</a> for more information.</p>
+            </div>
+        </div>
+        <script>
+        // 添加点击事件监听器
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('headerTitle').addEventListener('click', () => {
+                window.location.href = 'index.html';
+            });
+        });
+        </script>
+    </body>
+    </html>
+    

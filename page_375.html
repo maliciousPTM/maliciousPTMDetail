@@ -1,0 +1,204 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Companies - Company names starting with 'A'</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                width: 90%;
+                margin: auto;
+                overflow: hidden;
+            }
+            header {
+                background: #4A3F78;
+                color: #ffffff;
+                padding: 10px 0;
+                text-align: center;
+            }
+            header h1 {
+                margin: 0;
+            }
+            .search-bar {
+                padding: 10px;
+                text-align: center;
+            }
+            .search-bar input {
+                width: 50%;
+                padding: 10px;
+                font-size: 16px;
+            }
+            .search-bar button {
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            .sidebar {
+                float: left;
+                width: 20%;
+                background: #f5f5f5;
+                padding: 15px;
+            }
+            .sidebar h3 {
+                padding-left: 15px;
+            }
+            .sidebar a {
+                display: block;
+                padding: 10px 15px;
+                color: #000;
+                text-decoration: none;
+            }
+            .sidebar a:hover {
+                background: #ddd;
+            }
+            .main-content {
+                float: right;
+                width: 75%;
+                background: #fff;
+                padding: 15px;
+                margin: 15px 0;
+            }
+            .card {
+                background: #fff;
+                border: 1px solid #ddd;
+                padding: 20px;
+                margin-bottom: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .card h2 {
+                margin-top: 0;
+            }
+            .table-container {
+                overflow-x: auto;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            table, th, td {
+                border: 1px solid #ddd;
+            }
+            th, td {
+                padding: 10px;
+                text-align: left;
+                white-space: nowrap;
+            }
+            th {
+                background-color: #f4f4f4;
+            }
+            .pagination {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .pagination a, .pagination span {
+                color: #007bff;
+                padding: 8px 16px;
+                text-decoration: none;
+                border: 1px solid #ddd;
+                margin: 0 2px;
+            }
+            .pagination a:hover {
+                background-color: #ddd;
+            }
+            .pagination .current {
+                background-color: #ddd;
+                pointer-events: none;
+            }
+            .footer {
+                clear: both;
+                background: #4A3F78;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+                position: relative;
+                width: 100%;
+                margin-top: 20px;
+            }
+            .footer-content {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            .footer-content .column {
+                width: 22%;
+                padding: 10px;
+            }
+            .footer-content .column h3 {
+                margin-top: 0;
+            }
+            .footer-bottom {
+                background: #4A3F78;
+                color: #fff;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id="headerTitle">Malicious PTMs Detail</h1>
+        </header>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Vendor...">
+            <button>Search</button>
+        </div>
+        <div class="container">
+            <div class="sidebar">
+                <h3>Malicious PTMs</h3>
+                <a href="by_date.html">By Date</a>
+                <a href="by_type.html">By Type</a>
+                <a href="known_exploited.html">Known Exploited</a>
+                <a href="company.html">Company</a>
+                <a href="download.html">Download Scores</a>
+                <a href="like.html">Like Scores</a>
+                <a href="search.html">Search</a>
+                <h3>Vulnerability Intel.</h3>
+                <a href="news.html">Newsfeed</a>
+                <a href="open_source.html">Open Source PTMs</a>
+            </div>
+            <div class="main-content">
+                <div class="card">
+                    <h2>Malicious Pre-trained Models in Hugging Face Community</h2>
+                    <div class="table-container"><table><tr><th>Model Name</th><th>Tags</th><th>Pipeline Tag</th><th>Downloads</th><th>Created Time</th></tr><tr><td>JmiXIII/test</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-12-28T14:23:56.000Z</td></tr><tr><td>baseten/mistral_7b_instruct_merged_lora_fp16_tp1</td><td>['transformers', 'endpoints_compatible', 'region:us']</td><td>None</td><td>2</td><td>2023-11-22T23:09:27.000Z</td></tr><tr><td>User1115/whisper-large-v2-test-singleWord-small-100steps</td><td>['peft', 'safetensors', 'arxiv:1910.09700', 'base_model:openai/whisper-large-v2', 'region:us']</td><td>None</td><td>1</td><td>2023-11-22T07:02:36.000Z</td></tr><tr><td>TallisHe/ADM_exterior</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-12-27T11:23:59.000Z</td></tr><tr><td>mysterious-pie/vit_ft_lora_2_epochs_24classes_v16.02</td><td>['peft', 'arxiv:1910.09700', 'base_model:google/vit-base-patch16-224-in21k', 'region:us']</td><td>None</td><td>1</td><td>2024-02-16T12:48:48.000Z</td></tr><tr><td>kittysec/kittykatgamer_RVC_V2</td><td>['region:us']</td><td>None</td><td>0</td><td>2024-02-25T08:47:26.000Z</td></tr><tr><td>Joshua265/fingpt-forecaster_llama2-7b-gguf</td><td>['gguf', 'region:us']</td><td>None</td><td>24</td><td>2024-02-16T10:39:34.000Z</td></tr><tr><td>Nevertree/RTVC</td><td>['arxiv:1806.04558', 'arxiv:1802.08435', 'arxiv:1703.10135', 'arxiv:1710.10467', 'region:us']</td><td>None</td><td>0</td><td>2023-02-24T12:48:16.000Z</td></tr><tr><td>aashay96/indic-BloomLM</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-04-27T10:07:45.000Z</td></tr><tr><td>AlbieCofie/predict-customer-churn</td><td>['joblib', 'has_space', 'region:us']</td><td>None</td><td>0</td><td>2023-04-22T10:18:17.000Z</td></tr><tr><td>alpindale/miqu-1-70b-exl2-2.0bpw</td><td>['transformers', 'llama', 'text-generation', 'conversational', 'autotrain_compatible', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>12</td><td>2024-03-15T07:51:22.000Z</td></tr><tr><td>niRus/test</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-03-25T10:51:43.000Z</td></tr><tr><td>hushell/pmf_metadataset_dino</td><td>['region:us']</td><td>None</td><td>0</td><td>2022-11-04T14:13:14.000Z</td></tr><tr><td>lesliewang/my_first_repo</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-09-03T12:35:19.000Z</td></tr><tr><td>DataVare/datavare-mbox-to-pst-converter</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-05-05T07:08:16.000Z</td></tr><tr><td>VH1213141516/LAT_4-3_sweep_1_pgd_layers_0_6_12_18_24_epsilon_5.0_pgd_iterations_per_step_16</td><td>['peft', 'safetensors', 'arxiv:1910.09700', 'base_model:meta-llama/Llama-2-7b-chat-hf', 'region:us']</td><td>None</td><td>12</td><td>2024-04-04T03:39:45.000Z</td></tr><tr><td>SparseLLM/swiglu-90B</td><td>['transformers', 'pytorch', 'safetensors', 'endpoints_compatible', 'region:us']</td><td>None</td><td>3</td><td>2024-01-13T13:02:19.000Z</td></tr><tr><td>Razkaroth/llama2-qlora-finetunined-spanish</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-08-03T02:15:56.000Z</td></tr><tr><td>florentutu/flrntnb-03</td><td>['diffusers', 'endpoints_compatible', 'diffusers:StableDiffusionPipeline', 'region:us']</td><td>None</td><td>82</td><td>2023-05-23T07:08:39.000Z</td></tr><tr><td>Fahsai2323/fourhundred</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-11-13T07:56:49.000Z</td></tr></table></div>
+                    <div class="pagination"><a href="page_1.html">1</a> ... <a href="page_373.html">373</a> <a href="page_374.html">374</a> <span class="current">375</span> <a href="page_376.html">376</a> <a href="page_377.html">377</a> ... <a href="page_911.html">911</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="column">
+                    <h3>SecurityScorecard</h3>
+                    <p>1140 Avenue of the Americas<br>19th Floor<br>New York, NY 10036<br>info@securityscorecard.io<br>United States: (800) 682-1707<br>International: +1(646) 809-2166</p>
+                </div>
+                <div class="column">
+                    <a href="#">Login</a><br>
+                    <a href="#">Blog</a><br>
+                    <a href="#">Contact</a><br>
+                    <a href="#">Feedback</a><br>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>This product uses data from the Hugging Face API but is not endorsed or certified by the Hugging Face. See <a href="https://huggingface.co/">Hugging Face website</a> for more information.</p>
+            </div>
+        </div>
+        <script>
+        // 添加点击事件监听器
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('headerTitle').addEventListener('click', () => {
+                window.location.href = 'index.html';
+            });
+        });
+        </script>
+    </body>
+    </html>
+    

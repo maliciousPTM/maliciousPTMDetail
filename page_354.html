@@ -1,0 +1,204 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Companies - Company names starting with 'A'</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                width: 90%;
+                margin: auto;
+                overflow: hidden;
+            }
+            header {
+                background: #4A3F78;
+                color: #ffffff;
+                padding: 10px 0;
+                text-align: center;
+            }
+            header h1 {
+                margin: 0;
+            }
+            .search-bar {
+                padding: 10px;
+                text-align: center;
+            }
+            .search-bar input {
+                width: 50%;
+                padding: 10px;
+                font-size: 16px;
+            }
+            .search-bar button {
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            .sidebar {
+                float: left;
+                width: 20%;
+                background: #f5f5f5;
+                padding: 15px;
+            }
+            .sidebar h3 {
+                padding-left: 15px;
+            }
+            .sidebar a {
+                display: block;
+                padding: 10px 15px;
+                color: #000;
+                text-decoration: none;
+            }
+            .sidebar a:hover {
+                background: #ddd;
+            }
+            .main-content {
+                float: right;
+                width: 75%;
+                background: #fff;
+                padding: 15px;
+                margin: 15px 0;
+            }
+            .card {
+                background: #fff;
+                border: 1px solid #ddd;
+                padding: 20px;
+                margin-bottom: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .card h2 {
+                margin-top: 0;
+            }
+            .table-container {
+                overflow-x: auto;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            table, th, td {
+                border: 1px solid #ddd;
+            }
+            th, td {
+                padding: 10px;
+                text-align: left;
+                white-space: nowrap;
+            }
+            th {
+                background-color: #f4f4f4;
+            }
+            .pagination {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .pagination a, .pagination span {
+                color: #007bff;
+                padding: 8px 16px;
+                text-decoration: none;
+                border: 1px solid #ddd;
+                margin: 0 2px;
+            }
+            .pagination a:hover {
+                background-color: #ddd;
+            }
+            .pagination .current {
+                background-color: #ddd;
+                pointer-events: none;
+            }
+            .footer {
+                clear: both;
+                background: #4A3F78;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+                position: relative;
+                width: 100%;
+                margin-top: 20px;
+            }
+            .footer-content {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            .footer-content .column {
+                width: 22%;
+                padding: 10px;
+            }
+            .footer-content .column h3 {
+                margin-top: 0;
+            }
+            .footer-bottom {
+                background: #4A3F78;
+                color: #fff;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id="headerTitle">Malicious PTMs Detail</h1>
+        </header>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Vendor...">
+            <button>Search</button>
+        </div>
+        <div class="container">
+            <div class="sidebar">
+                <h3>Malicious PTMs</h3>
+                <a href="by_date.html">By Date</a>
+                <a href="by_type.html">By Type</a>
+                <a href="known_exploited.html">Known Exploited</a>
+                <a href="company.html">Company</a>
+                <a href="download.html">Download Scores</a>
+                <a href="like.html">Like Scores</a>
+                <a href="search.html">Search</a>
+                <h3>Vulnerability Intel.</h3>
+                <a href="news.html">Newsfeed</a>
+                <a href="open_source.html">Open Source PTMs</a>
+            </div>
+            <div class="main-content">
+                <div class="card">
+                    <h2>Malicious Pre-trained Models in Hugging Face Community</h2>
+                    <div class="table-container"><table><tr><th>Model Name</th><th>Tags</th><th>Pipeline Tag</th><th>Downloads</th><th>Created Time</th></tr><tr><td>pharaouk/mamba-5b</td><td>['transformers', 'pytorch', 'endpoints_compatible', 'has_space', 'region:us']</td><td>None</td><td>3</td><td>2023-12-06T03:17:30.000Z</td></tr><tr><td>vocabtrimmer/xlm-roberta-base-trimmed-pt-tweet-sentiment-pt</td><td>['transformers', 'pytorch', 'xlm-roberta', 'text-classification', 'autotrain_compatible', 'endpoints_compatible', 'region:us']</td><td>text-classification</td><td>1</td><td>2023-03-06T18:40:26.000Z</td></tr><tr><td>NikolayKozloff/occiglot-7b-de-en-GGUF</td><td>['gguf', 'region:us']</td><td>None</td><td>8</td><td>2024-03-11T21:24:24.000Z</td></tr><tr><td>mellaflame/recvischallenge_20_fold_2</td><td>['peft', 'safetensors', 'arxiv:1910.09700', 'base_model:google/vit-base-patch16-224', 'region:us']</td><td>None</td><td>1</td><td>2023-11-28T11:42:31.000Z</td></tr><tr><td>NickyNicky/LocutusqueXFelladrin-TinyMistral248M-Instruct_oasst2_chatML_V2</td><td>['transformers', 'safetensors', 'mistral', 'text-generation', 'autotrain_compatible', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>2</td><td>2024-01-18T00:24:40.000Z</td></tr><tr><td>Rasgeath/LoRA</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-01-07T17:45:27.000Z</td></tr><tr><td>asiryan/dreamshaper</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-11-07T04:45:44.000Z</td></tr><tr><td>Firefly55lm/vera_cnn_v1</td><td>['keras', 'region:us']</td><td>None</td><td>4</td><td>2024-04-06T13:53:16.000Z</td></tr><tr><td>Yukang/LongAlpaca-7B</td><td>['transformers', 'pytorch', 'safetensors', 'llama', 'text-generation', 'arxiv:2309.12307', 'autotrain_compatible', 'endpoints_compatible', 'has_space', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>3844</td><td>2023-10-07T11:53:07.000Z</td></tr><tr><td>vicgalle/clip-vit-base-patch16-photo-critique</td><td>['transformers', 'jax', 'clip', 'zero-shot-image-classification', 'endpoints_compatible', 'region:us']</td><td>zero-shot-image-classification</td><td>6</td><td>2022-03-02T23:29:05.000Z</td></tr><tr><td>dsrestrepo/Labrador_pt</td><td>['region:us']</td><td>None</td><td>0</td><td>2024-01-28T15:20:44.000Z</td></tr><tr><td>withU/kogpt2-emotion-chatbot</td><td>['transformers', 'pytorch', 'gpt2', 'text-generation', 'autotrain_compatible', 'endpoints_compatible', 'has_space', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>76</td><td>2022-05-12T05:21:44.000Z</td></tr><tr><td>dvruette/gpt-neox-20b-full-precision</td><td>['transformers', 'pytorch', 'gpt_neox', 'text-generation', 'autotrain_compatible', 'endpoints_compatible', 'has_space', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>3305</td><td>2023-04-10T12:31:11.000Z</td></tr><tr><td>Arack1/Bailu_model</td><td>['transformers', 'endpoints_compatible', 'region:us']</td><td>None</td><td>2</td><td>2023-10-28T15:36:15.000Z</td></tr><tr><td>AayushShah/GPT-J-6B-OnPrivateData-5Epochs</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-04-10T12:23:55.000Z</td></tr><tr><td>onezell/eleonorav5</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-05-12T21:18:27.000Z</td></tr><tr><td>oostapeno/flan-library-for-neo-1B_evol-rsgd_full_1B_repl_finegrained_poly_router_dir_random</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-11-26T00:41:44.000Z</td></tr><tr><td>i617/llama2-nr-adapt1</td><td>['peft', 'region:us']</td><td>None</td><td>1</td><td>2023-07-30T03:58:42.000Z</td></tr><tr><td>trevomckena/FitSpressoSouthAfricasale</td><td>['region:us']</td><td>None</td><td>0</td><td>2024-03-08T05:22:57.000Z</td></tr><tr><td>Zainiii/phi-1_5B-lora-math1</td><td>['peft', 'safetensors', 'arxiv:1910.09700', 'base_model:microsoft/phi-1_5', 'region:us']</td><td>None</td><td>1</td><td>2023-11-22T11:08:05.000Z</td></tr></table></div>
+                    <div class="pagination"><a href="page_1.html">1</a> ... <a href="page_352.html">352</a> <a href="page_353.html">353</a> <span class="current">354</span> <a href="page_355.html">355</a> <a href="page_356.html">356</a> ... <a href="page_911.html">911</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="column">
+                    <h3>SecurityScorecard</h3>
+                    <p>1140 Avenue of the Americas<br>19th Floor<br>New York, NY 10036<br>info@securityscorecard.io<br>United States: (800) 682-1707<br>International: +1(646) 809-2166</p>
+                </div>
+                <div class="column">
+                    <a href="#">Login</a><br>
+                    <a href="#">Blog</a><br>
+                    <a href="#">Contact</a><br>
+                    <a href="#">Feedback</a><br>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>This product uses data from the Hugging Face API but is not endorsed or certified by the Hugging Face. See <a href="https://huggingface.co/">Hugging Face website</a> for more information.</p>
+            </div>
+        </div>
+        <script>
+        // 添加点击事件监听器
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('headerTitle').addEventListener('click', () => {
+                window.location.href = 'index.html';
+            });
+        });
+        </script>
+    </body>
+    </html>
+    

@@ -1,0 +1,204 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Companies - Company names starting with 'A'</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                width: 90%;
+                margin: auto;
+                overflow: hidden;
+            }
+            header {
+                background: #4A3F78;
+                color: #ffffff;
+                padding: 10px 0;
+                text-align: center;
+            }
+            header h1 {
+                margin: 0;
+            }
+            .search-bar {
+                padding: 10px;
+                text-align: center;
+            }
+            .search-bar input {
+                width: 50%;
+                padding: 10px;
+                font-size: 16px;
+            }
+            .search-bar button {
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            .sidebar {
+                float: left;
+                width: 20%;
+                background: #f5f5f5;
+                padding: 15px;
+            }
+            .sidebar h3 {
+                padding-left: 15px;
+            }
+            .sidebar a {
+                display: block;
+                padding: 10px 15px;
+                color: #000;
+                text-decoration: none;
+            }
+            .sidebar a:hover {
+                background: #ddd;
+            }
+            .main-content {
+                float: right;
+                width: 75%;
+                background: #fff;
+                padding: 15px;
+                margin: 15px 0;
+            }
+            .card {
+                background: #fff;
+                border: 1px solid #ddd;
+                padding: 20px;
+                margin-bottom: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .card h2 {
+                margin-top: 0;
+            }
+            .table-container {
+                overflow-x: auto;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            table, th, td {
+                border: 1px solid #ddd;
+            }
+            th, td {
+                padding: 10px;
+                text-align: left;
+                white-space: nowrap;
+            }
+            th {
+                background-color: #f4f4f4;
+            }
+            .pagination {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .pagination a, .pagination span {
+                color: #007bff;
+                padding: 8px 16px;
+                text-decoration: none;
+                border: 1px solid #ddd;
+                margin: 0 2px;
+            }
+            .pagination a:hover {
+                background-color: #ddd;
+            }
+            .pagination .current {
+                background-color: #ddd;
+                pointer-events: none;
+            }
+            .footer {
+                clear: both;
+                background: #4A3F78;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+                position: relative;
+                width: 100%;
+                margin-top: 20px;
+            }
+            .footer-content {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            .footer-content .column {
+                width: 22%;
+                padding: 10px;
+            }
+            .footer-content .column h3 {
+                margin-top: 0;
+            }
+            .footer-bottom {
+                background: #4A3F78;
+                color: #fff;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id="headerTitle">Malicious PTMs Detail</h1>
+        </header>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Vendor...">
+            <button>Search</button>
+        </div>
+        <div class="container">
+            <div class="sidebar">
+                <h3>Malicious PTMs</h3>
+                <a href="by_date.html">By Date</a>
+                <a href="by_type.html">By Type</a>
+                <a href="known_exploited.html">Known Exploited</a>
+                <a href="company.html">Company</a>
+                <a href="download.html">Download Scores</a>
+                <a href="like.html">Like Scores</a>
+                <a href="search.html">Search</a>
+                <h3>Vulnerability Intel.</h3>
+                <a href="news.html">Newsfeed</a>
+                <a href="open_source.html">Open Source PTMs</a>
+            </div>
+            <div class="main-content">
+                <div class="card">
+                    <h2>Malicious Pre-trained Models in Hugging Face Community</h2>
+                    <div class="table-container"><table><tr><th>Model Name</th><th>Tags</th><th>Pipeline Tag</th><th>Downloads</th><th>Created Time</th></tr><tr><td>sd-concepts-library/jon-burgerman</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-04-10T14:51:45.000Z</td></tr><tr><td>Dischordo/PhotoS4w3d0ffBlend</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-10-04T18:05:35.000Z</td></tr><tr><td>YeungNLP/firefly-llama2-7b-chat</td><td>['transformers', 'pytorch', 'llama', 'text-generation', 'autotrain_compatible', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>1547</td><td>2023-09-16T05:39:23.000Z</td></tr><tr><td>AlfagenKazakhstan/Alfagen</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-09-15T15:30:00.000Z</td></tr><tr><td>tylerasapcreditrepair/Fix-Credit-Company-Tyler</td><td>['region:us']</td><td>None</td><td>0</td><td>2022-12-23T11:34:00.000Z</td></tr><tr><td>MBZUAI-LLM/GBLM-Pruner-LLaMA-1-30B</td><td>['transformers', 'pytorch', 'llama', 'text-generation', 'autotrain_compatible', 'endpoints_compatible', 'has_space', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>3</td><td>2023-10-26T19:20:09.000Z</td></tr><tr><td>MBZUAI-LLM/GBLM-Pruner-LLaMA-1-13B</td><td>['transformers', 'pytorch', 'llama', 'text-generation', 'autotrain_compatible', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>4</td><td>2023-10-26T19:19:50.000Z</td></tr><tr><td>MBZUAI-LLM/GBLM-Pruner-LLaMA-1-7B</td><td>['transformers', 'pytorch', 'llama', 'text-generation', 'autotrain_compatible', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>4</td><td>2023-10-26T19:18:58.000Z</td></tr><tr><td>YeungNLP/firefly-llama-13b</td><td>['transformers', 'pytorch', 'llama', 'text-generation', 'autotrain_compatible', 'endpoints_compatible', 'has_space', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>3390</td><td>2023-07-13T06:16:38.000Z</td></tr><tr><td>jonfreak/RealCartoon</td><td>['region:us']</td><td>None</td><td>0</td><td>2022-11-26T13:22:27.000Z</td></tr><tr><td>Jaebeom/Amugeona</td><td>['peft', 'region:us']</td><td>None</td><td>0</td><td>2023-09-12T11:08:05.000Z</td></tr><tr><td>aaneesai/openai-whisper-base-LORA-colab</td><td>['peft', 'safetensors', 'arxiv:1910.09700', 'base_model:openai/whisper-base', 'region:us']</td><td>None</td><td>1</td><td>2023-12-25T23:16:41.000Z</td></tr><tr><td>lmqg/mt5-small-zhquad-ae-trimmed-50000</td><td>['transformers', 'pytorch', 'mt5', 'text2text-generation', 'autotrain_compatible', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>text2text-generation</td><td>3</td><td>2023-11-09T19:22:09.000Z</td></tr><tr><td>IDEA-CCNL/Randeng-GAVAE-1.2B-Augmentation-Chinese</td><td>['transformers', 'pytorch', 'endpoints_compatible', 'has_space', 'region:us']</td><td>None</td><td>2</td><td>2022-11-06T14:01:58.000Z</td></tr><tr><td>ffigueiredo/dataset</td><td>['region:us']</td><td>None</td><td>0</td><td>2022-11-05T19:46:43.000Z</td></tr><tr><td>radioactive11/flower-classification</td><td>['doi:10.57967/hf/0096', 'region:us']</td><td>None</td><td>0</td><td>2022-11-06T14:06:45.000Z</td></tr><tr><td>trainMeWell/seg_distil_ted_undersampled-2-1_5sentsContext_5epoch_class-weight</td><td>['transformers', 'pytorch', 'distilbert', 'text-classification', 'autotrain_compatible', 'endpoints_compatible', 'region:us']</td><td>text-classification</td><td>1</td><td>2023-03-16T12:17:40.000Z</td></tr><tr><td>Undi95/LewdAgentLM-13B-GGUF</td><td>['gguf', 'region:us']</td><td>None</td><td>4</td><td>2023-10-21T01:25:21.000Z</td></tr><tr><td>keanurefresh/73981</td><td>['region:us']</td><td>None</td><td>0</td><td>2024-03-08T00:00:03.000Z</td></tr><tr><td>gaochangkuan/model_dir</td><td>['transformers', 'pytorch', 'jax', 'gpt2', 'text-generation', 'autotrain_compatible', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>11</td><td>2022-03-02T23:29:05.000Z</td></tr></table></div>
+                    <div class="pagination"><a href="page_1.html">1</a> ... <a href="page_347.html">347</a> <a href="page_348.html">348</a> <span class="current">349</span> <a href="page_350.html">350</a> <a href="page_351.html">351</a> ... <a href="page_911.html">911</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="column">
+                    <h3>SecurityScorecard</h3>
+                    <p>1140 Avenue of the Americas<br>19th Floor<br>New York, NY 10036<br>info@securityscorecard.io<br>United States: (800) 682-1707<br>International: +1(646) 809-2166</p>
+                </div>
+                <div class="column">
+                    <a href="#">Login</a><br>
+                    <a href="#">Blog</a><br>
+                    <a href="#">Contact</a><br>
+                    <a href="#">Feedback</a><br>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>This product uses data from the Hugging Face API but is not endorsed or certified by the Hugging Face. See <a href="https://huggingface.co/">Hugging Face website</a> for more information.</p>
+            </div>
+        </div>
+        <script>
+        // 添加点击事件监听器
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('headerTitle').addEventListener('click', () => {
+                window.location.href = 'index.html';
+            });
+        });
+        </script>
+    </body>
+    </html>
+    
