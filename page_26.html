@@ -1,0 +1,204 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Companies - Company names starting with 'A'</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                width: 90%;
+                margin: auto;
+                overflow: hidden;
+            }
+            header {
+                background: #4A3F78;
+                color: #ffffff;
+                padding: 10px 0;
+                text-align: center;
+            }
+            header h1 {
+                margin: 0;
+            }
+            .search-bar {
+                padding: 10px;
+                text-align: center;
+            }
+            .search-bar input {
+                width: 50%;
+                padding: 10px;
+                font-size: 16px;
+            }
+            .search-bar button {
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            .sidebar {
+                float: left;
+                width: 20%;
+                background: #f5f5f5;
+                padding: 15px;
+            }
+            .sidebar h3 {
+                padding-left: 15px;
+            }
+            .sidebar a {
+                display: block;
+                padding: 10px 15px;
+                color: #000;
+                text-decoration: none;
+            }
+            .sidebar a:hover {
+                background: #ddd;
+            }
+            .main-content {
+                float: right;
+                width: 75%;
+                background: #fff;
+                padding: 15px;
+                margin: 15px 0;
+            }
+            .card {
+                background: #fff;
+                border: 1px solid #ddd;
+                padding: 20px;
+                margin-bottom: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .card h2 {
+                margin-top: 0;
+            }
+            .table-container {
+                overflow-x: auto;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            table, th, td {
+                border: 1px solid #ddd;
+            }
+            th, td {
+                padding: 10px;
+                text-align: left;
+                white-space: nowrap;
+            }
+            th {
+                background-color: #f4f4f4;
+            }
+            .pagination {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .pagination a, .pagination span {
+                color: #007bff;
+                padding: 8px 16px;
+                text-decoration: none;
+                border: 1px solid #ddd;
+                margin: 0 2px;
+            }
+            .pagination a:hover {
+                background-color: #ddd;
+            }
+            .pagination .current {
+                background-color: #ddd;
+                pointer-events: none;
+            }
+            .footer {
+                clear: both;
+                background: #4A3F78;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+                position: relative;
+                width: 100%;
+                margin-top: 20px;
+            }
+            .footer-content {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            .footer-content .column {
+                width: 22%;
+                padding: 10px;
+            }
+            .footer-content .column h3 {
+                margin-top: 0;
+            }
+            .footer-bottom {
+                background: #4A3F78;
+                color: #fff;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id="headerTitle">Malicious PTMs Detail</h1>
+        </header>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Vendor...">
+            <button>Search</button>
+        </div>
+        <div class="container">
+            <div class="sidebar">
+                <h3>Malicious PTMs</h3>
+                <a href="by_date.html">By Date</a>
+                <a href="by_type.html">By Type</a>
+                <a href="known_exploited.html">Known Exploited</a>
+                <a href="company.html">Company</a>
+                <a href="download.html">Download Scores</a>
+                <a href="like.html">Like Scores</a>
+                <a href="search.html">Search</a>
+                <h3>Vulnerability Intel.</h3>
+                <a href="news.html">Newsfeed</a>
+                <a href="open_source.html">Open Source PTMs</a>
+            </div>
+            <div class="main-content">
+                <div class="card">
+                    <h2>Malicious Pre-trained Models in Hugging Face Community</h2>
+                    <div class="table-container"><table><tr><th>Model Name</th><th>Tags</th><th>Pipeline Tag</th><th>Downloads</th><th>Created Time</th></tr><tr><td>AlexanderBond/distilbert-base-uncased-finetuned-emotion</td><td>['transformers', 'pytorch', 'distilbert', 'text-classification', 'generated_from_trainer', 'dataset:emotion', 'base_model:distilbert-base-uncased', 'license:apache-2.0', 'model-index', 'autotrain_compatible', 'endpoints_compatible', 'region:us']</td><td>text-classification</td><td>9</td><td>2023-09-18T06:01:24.000Z</td></tr><tr><td>kanishka/smolm-mlm-bpe-unmask-seed_777</td><td>['transformers', 'pytorch', 'roberta', 'fill-mask', 'generated_from_trainer', 'autotrain_compatible', 'endpoints_compatible', 'region:us']</td><td>fill-mask</td><td>1</td><td>2023-09-16T16:28:31.000Z</td></tr><tr><td>Tanor/BERTicSENTPOS6</td><td>['transformers', 'pytorch', 'electra', 'text-classification', 'generated_from_trainer', 'base_model:Tanor/BERTicSENTPOS6', 'autotrain_compatible', 'endpoints_compatible', 'region:us']</td><td>text-classification</td><td>1</td><td>2023-07-03T15:12:01.000Z</td></tr><tr><td>macapa/blindness-image-classification</td><td>['fastai', 'has_space', 'region:us']</td><td>None</td><td>0</td><td>2023-02-27T16:53:18.000Z</td></tr><tr><td>d-karpone/distilhubert-finetuned-gtzan</td><td>['transformers', 'pytorch', 'hubert', 'audio-classification', 'generated_from_trainer', 'dataset:marsyas/gtzan', 'license:apache-2.0', 'endpoints_compatible', 'region:us']</td><td>audio-classification</td><td>2</td><td>2023-07-24T14:41:00.000Z</td></tr><tr><td>danielkty22/bert-base-uncased-finetune-squad-ep-1.0-lr-1e-05-wd-0.001-dp-0.2-ss-0-st-False-fh-False-hs-1000</td><td>['transformers', 'pytorch', 'bert', 'question-answering', 'endpoints_compatible', 'region:us']</td><td>question-answering</td><td>2</td><td>2023-09-28T22:00:10.000Z</td></tr><tr><td>danielkty22/bert-base-uncased-finetune-squad-ep-3.0-lr-1e-05-wd-0.001-dp-0.2-ss-0-st-False-fh-False-hs-900</td><td>['transformers', 'pytorch', 'bert', 'question-answering', 'endpoints_compatible', 'region:us']</td><td>question-answering</td><td>1</td><td>2023-09-28T21:47:59.000Z</td></tr><tr><td>danielkty22/bert-base-uncased-finetune-squad-ep-2.0-lr-1e-05-wd-0.001-dp-0.2-ss-0-st-False-fh-False-hs-800</td><td>['transformers', 'pytorch', 'bert', 'question-answering', 'endpoints_compatible', 'region:us']</td><td>question-answering</td><td>3</td><td>2023-09-28T21:39:21.000Z</td></tr><tr><td>danielkty22/bert-base-uncased-finetune-squad-ep-1.0-lr-1e-05-wd-0.001-dp-0.2-ss-0-st-False-fh-False-hs-700</td><td>['transformers', 'pytorch', 'bert', 'question-answering', 'endpoints_compatible', 'region:us']</td><td>question-answering</td><td>2</td><td>2023-09-28T21:33:40.000Z</td></tr><tr><td>kanishka/smolm-autoreg-bpe-babylm-3e-3</td><td>['transformers', 'pytorch', 'opt', 'text-generation', 'autotrain_compatible', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>2</td><td>2023-09-28T21:33:32.000Z</td></tr><tr><td>kaifanli/cnn_dailymail</td><td>['transformers', 'pytorch', 'bart', 'text2text-generation', 'autotrain_compatible', 'endpoints_compatible', 'region:us']</td><td>text2text-generation</td><td>2</td><td>2023-10-05T13:55:16.000Z</td></tr><tr><td>jusancp99/pneumonia-classification</td><td>['fastai', 'has_space', 'region:us']</td><td>None</td><td>0</td><td>2023-02-25T17:35:21.000Z</td></tr><tr><td>kanishka/smolm-autoreg-bpe-counterfactual-babylm-pipps_and_keys_to_it_all_removal-seed_211-1e-3</td><td>['transformers', 'tensorboard', 'safetensors', 'opt', 'text-generation', 'generated_from_trainer', 'dataset:kanishka/counterfactual-babylm-pipps_and_keys_to_it_all_removal', 'model-index', 'autotrain_compatible', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>10</td><td>2024-02-02T06:33:53.000Z</td></tr><tr><td>monus/videomae-base-finetuned-ucf101-subset</td><td>['transformers', 'pytorch', 'videomae', 'video-classification', 'endpoints_compatible', 'region:us']</td><td>video-classification</td><td>1</td><td>2023-07-17T08:50:41.000Z</td></tr><tr><td>altfreq/t5-small-temp</td><td>['transformers', 'pytorch', 'tf', 'jax', 'rust', 'onnx', 't5', 'text2text-generation', 'summarization', 'translation', 'en', 'fr', 'ro', 'de', 'multilingual', 'dataset:c4', 'arxiv:1805.12471', 'arxiv:1708.00055', 'arxiv:1704.05426', 'arxiv:1606.05250', 'arxiv:1808.09121', 'arxiv:1810.12885', 'arxiv:1905.10044', 'arxiv:1910.09700', 'license:apache-2.0', 'autotrain_compatible', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>translation</td><td>39</td><td>2024-04-07T01:04:25.000Z</td></tr><tr><td>peterdamn/distil-ast-audioset-finetuned-gtzan</td><td>['transformers', 'pytorch', 'audio-spectrogram-transformer', 'audio-classification', 'generated_from_trainer', 'dataset:marsyas/gtzan', 'license:apache-2.0', 'endpoints_compatible', 'region:us']</td><td>audio-classification</td><td>11</td><td>2023-07-17T08:29:32.000Z</td></tr><tr><td>danielkty22/bert-base-uncased-finetune-squad-ep-3.0-lr-2e-05-wd-0.001-dp-0.2-ss-0-st-False-fh-False-hs-600</td><td>['transformers', 'pytorch', 'bert', 'question-answering', 'endpoints_compatible', 'region:us']</td><td>question-answering</td><td>2</td><td>2023-09-28T21:21:37.000Z</td></tr><tr><td>worklai33/distilbert-base-uncased-finetuned-emotion</td><td>['transformers', 'pytorch', 'distilbert', 'text-classification', 'generated_from_trainer', 'base_model:distilbert-base-uncased', 'license:apache-2.0', 'autotrain_compatible', 'endpoints_compatible', 'region:us']</td><td>text-classification</td><td>2</td><td>2023-09-28T21:09:47.000Z</td></tr><tr><td>danielkty22/bert-base-uncased-finetune-squad-ep-1.0-lr-1e-05-wd-0.001-dp-0.2-ss-0-st-False-fh-False-hs-400</td><td>['transformers', 'pytorch', 'bert', 'question-answering', 'endpoints_compatible', 'region:us']</td><td>question-answering</td><td>2</td><td>2023-09-28T21:07:32.000Z</td></tr><tr><td>danielkty22/bert-base-uncased-finetune-squad-ep-3.0-lr-1e-05-wd-0.001-dp-0.2-ss-0-st-False-fh-False-hs-300</td><td>['transformers', 'pytorch', 'bert', 'question-answering', 'endpoints_compatible', 'region:us']</td><td>question-answering</td><td>2</td><td>2023-09-28T20:55:30.000Z</td></tr></table></div>
+                    <div class="pagination"><a href="page_1.html">1</a> ... <a href="page_24.html">24</a> <a href="page_25.html">25</a> <span class="current">26</span> <a href="page_27.html">27</a> <a href="page_28.html">28</a> ... <a href="page_911.html">911</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="column">
+                    <h3>SecurityScorecard</h3>
+                    <p>1140 Avenue of the Americas<br>19th Floor<br>New York, NY 10036<br>info@securityscorecard.io<br>United States: (800) 682-1707<br>International: +1(646) 809-2166</p>
+                </div>
+                <div class="column">
+                    <a href="#">Login</a><br>
+                    <a href="#">Blog</a><br>
+                    <a href="#">Contact</a><br>
+                    <a href="#">Feedback</a><br>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>This product uses data from the Hugging Face API but is not endorsed or certified by the Hugging Face. See <a href="https://huggingface.co/">Hugging Face website</a> for more information.</p>
+            </div>
+        </div>
+        <script>
+        // 添加点击事件监听器
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('headerTitle').addEventListener('click', () => {
+                window.location.href = 'index.html';
+            });
+        });
+        </script>
+    </body>
+    </html>
+    

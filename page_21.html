@@ -1,0 +1,204 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Companies - Company names starting with 'A'</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                width: 90%;
+                margin: auto;
+                overflow: hidden;
+            }
+            header {
+                background: #4A3F78;
+                color: #ffffff;
+                padding: 10px 0;
+                text-align: center;
+            }
+            header h1 {
+                margin: 0;
+            }
+            .search-bar {
+                padding: 10px;
+                text-align: center;
+            }
+            .search-bar input {
+                width: 50%;
+                padding: 10px;
+                font-size: 16px;
+            }
+            .search-bar button {
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            .sidebar {
+                float: left;
+                width: 20%;
+                background: #f5f5f5;
+                padding: 15px;
+            }
+            .sidebar h3 {
+                padding-left: 15px;
+            }
+            .sidebar a {
+                display: block;
+                padding: 10px 15px;
+                color: #000;
+                text-decoration: none;
+            }
+            .sidebar a:hover {
+                background: #ddd;
+            }
+            .main-content {
+                float: right;
+                width: 75%;
+                background: #fff;
+                padding: 15px;
+                margin: 15px 0;
+            }
+            .card {
+                background: #fff;
+                border: 1px solid #ddd;
+                padding: 20px;
+                margin-bottom: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .card h2 {
+                margin-top: 0;
+            }
+            .table-container {
+                overflow-x: auto;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+            }
+            table, th, td {
+                border: 1px solid #ddd;
+            }
+            th, td {
+                padding: 10px;
+                text-align: left;
+                white-space: nowrap;
+            }
+            th {
+                background-color: #f4f4f4;
+            }
+            .pagination {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .pagination a, .pagination span {
+                color: #007bff;
+                padding: 8px 16px;
+                text-decoration: none;
+                border: 1px solid #ddd;
+                margin: 0 2px;
+            }
+            .pagination a:hover {
+                background-color: #ddd;
+            }
+            .pagination .current {
+                background-color: #ddd;
+                pointer-events: none;
+            }
+            .footer {
+                clear: both;
+                background: #4A3F78;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+                position: relative;
+                width: 100%;
+                margin-top: 20px;
+            }
+            .footer-content {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            .footer-content .column {
+                width: 22%;
+                padding: 10px;
+            }
+            .footer-content .column h3 {
+                margin-top: 0;
+            }
+            .footer-bottom {
+                background: #4A3F78;
+                color: #fff;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id="headerTitle">Malicious PTMs Detail</h1>
+        </header>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Vendor...">
+            <button>Search</button>
+        </div>
+        <div class="container">
+            <div class="sidebar">
+                <h3>Malicious PTMs</h3>
+                <a href="by_date.html">By Date</a>
+                <a href="by_type.html">By Type</a>
+                <a href="known_exploited.html">Known Exploited</a>
+                <a href="company.html">Company</a>
+                <a href="download.html">Download Scores</a>
+                <a href="like.html">Like Scores</a>
+                <a href="search.html">Search</a>
+                <h3>Vulnerability Intel.</h3>
+                <a href="news.html">Newsfeed</a>
+                <a href="open_source.html">Open Source PTMs</a>
+            </div>
+            <div class="main-content">
+                <div class="card">
+                    <h2>Malicious Pre-trained Models in Hugging Face Community</h2>
+                    <div class="table-container"><table><tr><th>Model Name</th><th>Tags</th><th>Pipeline Tag</th><th>Downloads</th><th>Created Time</th></tr><tr><td>nadellaroshni/test_model</td><td>['transformers', 'safetensors', 'xlm-roberta', 'text-classification', 'generated_from_trainer', 'base_model:xlm-roberta-base', 'license:mit', 'autotrain_compatible', 'endpoints_compatible', 'region:us']</td><td>text-classification</td><td>6</td><td>2024-03-29T09:08:19.000Z</td></tr><tr><td>danielkty22/gpt2-medium-ep-5.0-b-4-lr-1e-05-dp-0.01-ss-0-st-False-fh-False-hs-500</td><td>['transformers', 'pytorch', 'gpt2', 'question-answering', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>question-answering</td><td>2</td><td>2023-10-23T22:15:41.000Z</td></tr><tr><td>keremberke/yolov8n-pcb-defect-segmentation</td><td>['ultralytics', 'tensorboard', 'v8', 'ultralyticsplus', 'yolov8', 'yolo', 'vision', 'image-segmentation', 'pytorch', 'awesome-yolov8-models', 'dataset:keremberke/pcb-defect-segmentation', 'model-index', 'region:us']</td><td>image-segmentation</td><td>2773</td><td>2023-01-28T06:32:15.000Z</td></tr><tr><td>Piranav/wav2vec2-large-mms-1b-mundari-colab</td><td>['transformers', 'tensorboard', 'safetensors', 'wav2vec2', 'automatic-speech-recognition', 'generated_from_trainer', 'dataset:audiofolder', 'base_model:facebook/mms-1b-all', 'license:cc-by-nc-4.0', 'endpoints_compatible', 'region:us']</td><td>automatic-speech-recognition</td><td>8</td><td>2024-03-11T16:48:16.000Z</td></tr><tr><td>ethan123321/ai</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-01-26T18:46:32.000Z</td></tr><tr><td>caspar4444/cat_classifier</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-01-26T18:47:04.000Z</td></tr><tr><td>nacielo/wav2GPT2MusicfreezeL5E2</td><td>['transformers', 'pytorch', 'tensorboard', 'speech-encoder-decoder', 'automatic-speech-recognition', 'generated_from_trainer', 'endpoints_compatible', 'region:us']</td><td>automatic-speech-recognition</td><td>1</td><td>2023-08-16T18:09:22.000Z</td></tr><tr><td>Pdmk/t5-small-finetuned-summary_pd</td><td>['transformers', 'pytorch', 'tensorboard', 't5', 'text2text-generation', 'summarization', 'generated_from_trainer', 'base_model:t5-small', 'license:apache-2.0', 'autotrain_compatible', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>summarization</td><td>6</td><td>2023-08-21T21:21:06.000Z</td></tr><tr><td>Tanor/BERTovoSENTPOS0</td><td>['transformers', 'pytorch', 'roberta', 'text-classification', 'generated_from_trainer', 'autotrain_compatible', 'endpoints_compatible', 'region:us']</td><td>text-classification</td><td>0</td><td>2023-07-04T11:29:42.000Z</td></tr><tr><td>danielkty22/gpt2-medium-ep-6.0-b-4-lr-1e-05-dp-0.01-ss-0-st-False-fh-False-hs-600</td><td>['transformers', 'pytorch', 'gpt2', 'question-answering', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>question-answering</td><td>2</td><td>2023-10-23T22:26:50.000Z</td></tr><tr><td>Msrisrujan/xlm-roberta-base-finetuned-panx-en</td><td>['transformers', 'pytorch', 'xlm-roberta', 'token-classification', 'generated_from_trainer', 'dataset:xtreme', 'base_model:xlm-roberta-base', 'license:mit', 'model-index', 'autotrain_compatible', 'endpoints_compatible', 'region:us']</td><td>token-classification</td><td>10</td><td>2023-08-21T21:29:00.000Z</td></tr><tr><td>AdapterOcean/expert_275e1dad5b7446c09bfb0ff636369b16</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-10-23T14:45:57.000Z</td></tr><tr><td>AdapterOcean/expert_23d10d8e1eec4c1cbce564f1428d001d</td><td>['region:us']</td><td>None</td><td>0</td><td>2023-10-23T14:45:10.000Z</td></tr><tr><td>xz97/AlpaCare-llama1-7b</td><td>['transformers', 'pytorch', 'llama', 'text-generation', 'en', 'arxiv:2310.14558', 'license:cc-by-nc-4.0', 'autotrain_compatible', 'endpoints_compatible', 'text-generation-inference', 'region:us']</td><td>text-generation</td><td>11</td><td>2023-10-23T14:44:42.000Z</td></tr><tr><td>PrunaAI/inception_v3.gluon_in1k-turbo-green-smashed</td><td>['pruna-engine', 'region:us']</td><td>None</td><td>3</td><td>2024-03-10T04:28:00.000Z</td></tr><tr><td>PrunaAI/inception_v3.tf_adv_in1k-turbo-green-smashed</td><td>['pruna-engine', 'region:us']</td><td>None</td><td>272</td><td>2024-03-10T04:29:28.000Z</td></tr><tr><td>PrunaAI/inception_v3.tv_in1k-turbo-green-smashed</td><td>['pruna-engine', 'region:us']</td><td>None</td><td>14</td><td>2024-03-10T04:31:25.000Z</td></tr><tr><td>zamankh/my_awesome_mind_model</td><td>['transformers', 'pytorch', 'wav2vec2', 'audio-classification', 'generated_from_trainer', 'dataset:minds14', 'base_model:facebook/wav2vec2-base', 'license:apache-2.0', 'model-index', 'endpoints_compatible', 'region:us']</td><td>audio-classification</td><td>15</td><td>2023-09-21T10:44:31.000Z</td></tr><tr><td>lirondos/anglicisms-spanish-flair-cs</td><td>['flair', 'pytorch', 'anglicisms', 'loanwords', 'borrowing', 'codeswitching', 'token-classification', 'sequence-tagger-model', 'arxiv:2203.16169', 'es', 'dataset:coalas', 'license:cc-by-4.0', 'region:us']</td><td>token-classification</td><td>112</td><td>2022-03-29T13:09:33.000Z</td></tr><tr><td>Msrisrujan/xlm-roberta-base-finetuned-panx-all</td><td>['transformers', 'pytorch', 'xlm-roberta', 'token-classification', 'generated_from_trainer', 'base_model:xlm-roberta-base', 'license:mit', 'autotrain_compatible', 'endpoints_compatible', 'region:us']</td><td>token-classification</td><td>2</td><td>2023-08-21T21:37:11.000Z</td></tr></table></div>
+                    <div class="pagination"><a href="page_1.html">1</a> ... <a href="page_19.html">19</a> <a href="page_20.html">20</a> <span class="current">21</span> <a href="page_22.html">22</a> <a href="page_23.html">23</a> ... <a href="page_911.html">911</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="column">
+                    <h3>SecurityScorecard</h3>
+                    <p>1140 Avenue of the Americas<br>19th Floor<br>New York, NY 10036<br>info@securityscorecard.io<br>United States: (800) 682-1707<br>International: +1(646) 809-2166</p>
+                </div>
+                <div class="column">
+                    <a href="#">Login</a><br>
+                    <a href="#">Blog</a><br>
+                    <a href="#">Contact</a><br>
+                    <a href="#">Feedback</a><br>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>This product uses data from the Hugging Face API but is not endorsed or certified by the Hugging Face. See <a href="https://huggingface.co/">Hugging Face website</a> for more information.</p>
+            </div>
+        </div>
+        <script>
+        // 添加点击事件监听器
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('headerTitle').addEventListener('click', () => {
+                window.location.href = 'index.html';
+            });
+        });
+        </script>
+    </body>
+    </html>
+    
