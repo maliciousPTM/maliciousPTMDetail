@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malicious PTM Description Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #4A3F78;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            cursor: pointer;
+        }
+        .search-bar {
+            padding: 10px;
+            text-align: center;
+        }
+        .search-bar input {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .sidebar {
+            float: left;
+            width: 20%;
+            background: #f5f5f5;
+            padding: 15px;
+        }
+        .sidebar h3 {
+            padding-left: 15px;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px 15px;
+            color: #000;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background: #ddd;
+        }
+        .main-content {
+            float: right;
+            width: 75%;
+            background: #fff;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+        .card-content {
+            display: flex;
+            align-items: center;
+        }
+        .card-content .text {
+            flex: 1;
+        }
+        .card-content canvas {
+            max-width: 400px;
+            max-height: 400px;
+            margin-right: 20px;
+        }
+        .highlight {
+            color: #36A2EB;
+            font-size: larger;
+        }
+        .footer {
+            clear: both;
+            background: #4A3F78;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .footer-content .column {
+            width: 22%;
+            padding: 10px;
+        }
+        .footer-content .column h3 {
+            margin-top: 0;
+        }
+        .footer-bottom {
+            background: #4A3F78;
+            color: #fff;
+            padding: 10px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // 添加点击事件监听器
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('headerTitle').addEventListener('click', () => {
+                window.location.href = 'index.html';
+            });
+        });
+
+        // Data for the Doughnut Chart
+        const doughnutData = {
+            labels: ['Last Day', 'Last Week', 'Last Month', 'Last Three Months'],
+            datasets: [{
+                data: [1316, 13536, 60941, 176129],
+                backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0']
+            }]
+        };
+
+        // Config for the Doughnut Chart
+        const doughnutConfig = {
+            type: 'doughnut',
+            data: doughnutData,
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'New/Updated Malicious PTMs'
+                    }
+                }
+            },
+        };
+
+        // Data for the Downloads Bar Chart
+        const downloadsBarData = {
+            labels: ['0-1', '1-2', '2-3', '3-4', '4-5', '5-6', '6-7', '7-8', '8-9', '9-10', '10-100', '100-1000', '>1000'],
+            datasets: [{
+                label: 'Downloads',
+                data: [388793, 56430, 56146, 41088, 26538, 16740, 11755, 11810, 11806, 9606, 76621, 24134, 14527],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        };
+
+        // Config for the Downloads Bar Chart
+        const downloadsBarConfig = {
+            type: 'bar',
+            data: downloadsBarData,
+            options: {
+                indexAxis: 'y',
+                scales: {
+                    x: {
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: 'Distribution of Malicious PTMs by Downloads'
+                    }
+                }
+            },
+        };
+
+        // Data for the Likes Bar Chart
+        const likesBarData = {
+            labels: ['0-1', '1-2', '2-3', '3-4', '4-5', '5-6', '6-7', '7-8', '8-9', '9-10', '10-100', '100-1000', '>1000'],
+            datasets: [{
+                label: 'Likes',
+                data: [676097, 32962, 10310, 5464, 3514, 2377, 1804, 1411, 1123, 881, 8795, 1175, 81],
+                backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                borderColor: 'rgba(153, 102, 255, 1)',
+                borderWidth: 1
+            }]
+        };
+
+        // Config for the Likes Bar Chart
+        const likesBarConfig = {
+            type: 'bar',
+            data: likesBarData,
+            options: {
+                indexAxis: 'y',
+                scales: {
+                    x: {
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    title: {
+                        display: true,
+                        text: 'Distribution of Malicious PTMs by Likes'
+                    }
+                }
+            },
+        };
+
+        // Render the charts when the window loads
+        window.onload = function() {
+            const ctxDoughnut = document.getElementById('doughnutChart').getContext('2d');
+            new Chart(ctxDoughnut, doughnutConfig);
+
+            const ctxDownloadsBar = document.getElementById('downloadsBarChart').getContext('2d');
+            new Chart(ctxDownloadsBar, downloadsBarConfig);
+
+            const ctxLikesBar = document.getElementById('likesBarChart').getContext('2d');
+            new Chart(ctxLikesBar, likesBarConfig);
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1 id="headerTitle">Malicious PTMs Detail</h1>
+    </header>
+    <div class="search-bar">
+        <input type="text" placeholder="PTM name, Company name,...">
+        <button>Search</button>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Malicious PTMs</h3>
+            <a href="by_date.html">By Date</a>
+            <a href="by_type.html">By Type</a>
+            <a href="known_exploited.html">Known Exploited</a>
+            <a href="company.html">Company</a>
+            <a href="download.html">Download Scores</a>
+            <a href="like.html">Like Scores</a>
+            <a href="search.html">Search</a>
+            <h3>Vulnerability Intel.</h3>
+            <a href="news.html">Newsfeed</a>
+            <a href="open_source.html">Open Source PTMs</a>
+        </div>
+        <div class="main-content">
+            <div class="card">
+                <h2>New/Updated Malicious PTMs</h2>
+                <div class="card-content">
+                    <canvas id="doughnutChart"></canvas>
+                    <div class="text">
+                        <h3>Known exploited malicious PTMs</h3>
+                        <p> <a class="highlight">1316</a> malicious PTMs created in the last day</p>
+                        <p> <a class="highlight">13536</a> malicious PTMs created in the last 7 days</p>
+                        <p> <a class="highlight">60941</a> malicious PTMs created in the last 30 days</p>
+                        <p> <a class="highlight">176129</a> malicious PTMs created in the last 3 months</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Distribution of malicious PTMs by downloads</h2>
+                <canvas id="downloadsBarChart" width="400" height="200"></canvas>
+            </div>
+            <div class="card">
+                <h2>Distribution of malicious PTMs by likes</h2>
+                <canvas id="likesBarChart" width="400" height="200"></canvas>
+            </div>
+            <div class="card">
+                <h2>The introduction of MaliciousPTM.com</h2>
+                <p>MaliciousPTM.com now offers much more than just malicious pre-trained models! Advisories, RSS feeds and various other intelligence features have been added along with APIs, email alerts, feeds and more.</p>
+                <p>We want to save our users from Googling for information! We want to make our users more efficient and productive by providing them with easy access to information and the necessary utilities.</p>
+                <p>We want to become your one-stop shop for anything related to malicious PTMs. Instead of using multiple different tools and multiple web sites, you should only need MaliciousPTM.</p>
+                <a href="#">updates and change log</a> for more information.</p>
+                <p>Feel free to reach us at <a href="mailto:admin@cvedetails.com">admin@cvedetails.com</a> if you have any questions/concerns or feedback.</p>
+            </div>
+            <div class="card">
+                <h2>Why do you need malicious PTM intelligence?</h2>
+                <p>Using a house analogy, your house has many doors and windows, and there will always be burglars and other parties with bad intentions outside.</p>
+                <p>To secure your house, you first need to know how many windows and doors you have (<span class="highlight">attack surface</span>), if your doors are secured properly and if they can be opened due to some defects in your locks or similar (<span class="highlight">malicious PTM intelligence</span>).</p>
+                <p>Existence of burglars in your neighborhood or whether burglars are targeting specific lock types etc (<span class="highlight">threat intelligence</span>) won't help much unless you keep your house secure. Even if you track every single known burglar, given the opportunity, some random person, even without prior experience, may break into your house.</p>
+                <p>We understand that you need to keep up with everything with limited time and resources! We are here to make life easier for you.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="column">
+                <h3>SecurityScorecard</h3>
+                <p>1140 Avenue of the Americas<br>19th Floor<br>New York, NY 10036<br>info@securityscorecard.io<br>United States: (800) 682-1707<br>International: +1(646) 809-2166</p>
+            </div>
+            <div class="column">
+                <a href="#">Login</a><br>
+                <a href="#">Blog</a><br>
+                <a href="#">Contact</a><br>
+                <a href="#">Feedback</a><br>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>This product uses data from the Hugging Face API but is not endorsed or certified by the Hugging Face. See <a href="https://huggingface.co/">Hugging Face website</a> for more information.</p>
+        </div>
+    </div>
+</body>
+</html>
