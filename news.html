@@ -117,7 +117,7 @@
 </head>
 <body>
     <header>
-        <h1>Malicious PTMs Detail</h1>
+        <h1 id="headerTitle">Malicious PTMs Detail</h1>
     </header>
     <div class="search-bar">
         <input type="text" placeholder="PTM name, Company name,...">
@@ -179,5 +179,13 @@
             <p>This product uses data from the Hugging Face API but is not endorsed or certified by the Hugging Face. See <a href="https://huggingface.co/">Hugging Face website</a> for more information.</p>
         </div>
     </div>
+    <script>
+        // 添加点击事件监听器
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('headerTitle').addEventListener('click', () => {
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
 </body>
 </html>
