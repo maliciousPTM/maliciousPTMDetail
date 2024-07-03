@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malicious PTM Description - By Number of Downloads</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #4A3F78;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .search-bar {
+            padding: 10px;
+            text-align: center;
+        }
+        .search-bar input {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .sidebar {
+            float: left;
+            width: 20%;
+            background: #f5f5f5;
+            padding: 15px;
+        }
+        .sidebar h3 {
+            padding-left: 15px;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px 15px;
+            color: #000;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background: #ddd;
+        }
+        .main-content {
+            float: right;
+            width: 75%;
+            background: #fff;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .footer {
+            clear: both;
+            background: #4A3F78;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .footer-content .column {
+            width: 22%;
+            padding: 10px;
+        }
+        .footer-content .column h3 {
+            margin-top: 0;
+        }
+        .footer-bottom {
+            background: #4A3F78;
+            color: #fff;
+            padding: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .highlight {
+            background-color: #ffdddd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="headerTitle">Malicious PTMs Detail</h1>
+    </header>
+    <div class="search-bar">
+        <input type="text" placeholder="PTM name, Company name,...">
+        <button>Search</button>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Malicious PTMs</h3>
+            <a href="by_date.html">By Date</a>
+            <a href="by_type.html">By Type</a>
+            <a href="known_exploited.html">Known Exploited</a>
+            <a href="company.html">Company</a>
+            <a href="download.html">Download Scores</a>
+            <a href="like.html">Like Scores</a>
+            <a href="search.html">Search</a>
+            <h3>Vulnerability Intel.</h3>
+            <a href="news.html">Newsfeed</a>
+            <a href="open_source.html">Open Source PTMs</a>
+        </div>
+        <div class="main-content">
+            <h2>Malicious PTMs By Number of Downloads</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>0-10</th>
+                        <th>10-100</th>
+                        <th>100-1000</th>
+                        <th>1000-10000</th>
+                        <th>10000+</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>2022</td><td>3115</td><td>889</td><td>201</td><td>115</td><td>51</td></tr><tr><td>2023</td><td>9584</td><td>550</td><td>121</td><td>209</td><td>23</td></tr><tr><td>2024</td><td>2636</td><td>544</td><td>138</td><td>30</td><td>6</td></tr>
+                </tbody>
+                <tfoot>
+                    <tr><th>Total</th><th>15335</th><th>1983</th><th>460</th><th>354</th><th>80</th></tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="column">
+                <h3>SecurityScorecard</h3>
+                <p>1140 Avenue of the Americas<br>19th Floor<br>New York, NY 10036<br>info@securityscorecard.io<br>United States: (800) 682-1707<br>International: +1(646) 809-2166</p>
+            </div>
+            <div class="column">
+                <a href="#">Login</a><br>
+                <a href="#">Blog</a><br>
+                <a href="#">Contact</a><br>
+                <a href="#">Feedback</a><br>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>This product uses data from the Hugging Face API but is not endorsed or certified by the Hugging Face. See <a href="https://huggingface.co/">Hugging Face website</a> for more information.</p>
+        </div>
+    </div>
+    <script>
+        // 添加点击事件监听器
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById('headerTitle').addEventListener('click', () => {
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
+</body>
+</html>
